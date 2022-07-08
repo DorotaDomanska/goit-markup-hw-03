@@ -1,0 +1,368 @@
+:root {
+  --brand-color: #2196f3;
+  --brand-color-background-1: #2f303a;
+  --brand-color-background-2: #f5f4fa;
+  --brand-color-header: #212121;
+  --brand-color-text: #757575;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--brand-color-text);
+}
+
+.container {
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.web {
+  color: var(--brand-color);
+}
+
+.studio-header {
+  color: #000000;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--brand-color);
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  width: 254px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+  justify-content: space-between;
+}
+
+.nav-list-item {
+  width: 53px;
+  height: 16px;
+  top: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-list-link {
+  text-decoration: none;
+  color: var(--brand-color-header);
+}
+
+.mail {
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+}
+
+.telephone {
+  width: 110px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
+}
+
+.mail,
+.telephone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--brand-color-text);
+}
+
+.mail:hover,
+.telephone:hover {
+  color: var(--brand-color);
+}
+
+.main-header {
+  width: 1600px;
+  height: 600px;
+  padding: 200px 452px 280px;
+  background-color: var(--brand-color-background-1);
+}
+
+.h1 {
+  width: 696px;
+  height: 120px;
+  top: 280px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--brand-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.lorem-ipsum-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lorem-ipsum-list-item {
+  width: 270px;
+  height: 16px;
+  top: 774px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-header);
+}
+
+.lorem-ipsum-list p {
+  width: 270px;
+  height: 75px;
+  top: 800px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.images-list-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-header);
+}
+
+.images-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.images-list.what-we-do {
+  justify-content: space-between;
+}
+
+.div-team {
+  background-color: var(--brand-color-background-2);
+}
+
+.team-list {
+  justify-content: space-between;
+}
+
+.figure-team {
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.images-list-item {
+  display: block;
+}
+
+.figcaption-team {
+  display: table-caption;
+  caption-side: bottom;
+  text-align: center;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-header);
+}
+
+.position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.studio-footer {
+  color: #ffffff;
+}
+
+.footer {
+  width: 1600px;
+  height: 252px;
+  left: 215px;
+  top: 2097px;
+  background-color: var(--brand-color-background-1);
+}
+
+.city-street {
+  width: 246px;
+  height: 21px;
+  top: 2208px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.mail-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.telephone-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-footer:hover,
+.mail-footer:focus,
+.telephone-footer:hover,
+.telephone-footer:focus {
+  color: var(--brand-color);
+}
+
+.buttons-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttons {
+  width: 93px;
+  height: 38px;
+  top: 174px;
+  background: var(--brand-color-background-2);
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-header);
+  cursor: pointer;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--brand-color);
+  color: #ffffff;
+}
+
+.projects-list {
+  flex-wrap: wrap;
+}
+
+.figure {
+  /* display: table; */
+  width: 370px;
+  height: 404px;
+}
+
+.figcaption {
+  /* display: table-caption;
+  caption-side: bottom; */
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.project-name {
+  width: 322px;
+  height: 36px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--brand-color-header);
+}
+
+.project-type {
+  width: 322px;
+  height: 30px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-text);
+}
