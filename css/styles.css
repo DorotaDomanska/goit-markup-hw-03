@@ -9,10 +9,12 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--brand-color-text);
+  width: 1600px;
 }
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .section {
@@ -23,28 +25,29 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
   height: 80px;
+}
+
+.flex-box {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
 }
 
 .left-header {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  gap: 93px;
 }
 
 .right-header {
   display: flex;
   justify-content: flex-end;
+  gap: 50px;
 }
 
 .logo {
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 24px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -71,15 +74,12 @@ body {
   display: flex;
   width: 254px;
   height: 16px;
-  left: 453px;
-  top: 32px;
   justify-content: space-between;
 }
 
 .nav-list-item {
   width: 53px;
   height: 16px;
-  top: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -93,20 +93,15 @@ body {
 
 .mail {
   width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
 }
 
 .telephone {
   width: 110px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
 }
 
 .mail,
 .telephone {
+  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -121,44 +116,45 @@ body {
 }
 
 .main-header {
-  width: 1600px;
-  height: 600px;
-  padding: 200px 452px 280px;
   background-color: var(--brand-color-background-1);
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .h1 {
   width: 696px;
   height: 120px;
-  top: 280px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
 }
 
 .main-button {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--brand-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
 }
 
+.container.lorem-ipsum-list {
+  padding-bottom: 0;
+}
+
 .lorem-ipsum-list {
   list-style-type: none;
+  width: 1170px;
   display: flex;
   justify-content: space-between;
 }
@@ -166,7 +162,6 @@ body {
 .lorem-ipsum-list-item {
   width: 270px;
   height: 16px;
-  top: 774px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -178,10 +173,14 @@ body {
 .lorem-ipsum-list p {
   width: 270px;
   height: 75px;
-  top: 800px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.what-we-do {
+  width: 1170px;
+  height: 386px;
 }
 
 .images-list-header {
@@ -206,15 +205,23 @@ body {
   background-color: var(--brand-color-background-2);
 }
 
+.team {
+  width: 1170px;
+  height: 368px;
+}
+
 .team-list {
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.team-list > li:not(:last child) {
+  margin-right: 30 px;
 }
 
 .figure-team {
   width: 270px;
   height: 368px;
-  left: 215px;
-  top: 1635px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -235,7 +242,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color-header);
 }
@@ -244,7 +250,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -253,34 +258,39 @@ body {
 }
 
 .footer {
-  width: 1600px;
   height: 252px;
-  left: 215px;
-  top: 2097px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--brand-color-background-1);
 }
 
 .city-street {
   width: 246px;
   height: 21px;
-  top: 2208px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
+  margin-bottom: 9px;
   color: #ffffff;
 }
 
 .mail-footer {
+  width: 231px;
+  height: 21px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .telephone-footer {
+  width: 231px;
+  height: 21px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -296,24 +306,27 @@ body {
   color: var(--brand-color);
 }
 
+.portfolio {
+  width: 1170px;
+}
+
 .buttons-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 34px;
 }
 
 .buttons {
   width: 93px;
   height: 38px;
-  top: 174px;
   background: var(--brand-color-background-2);
   border-radius: 4px;
   border: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color-header);
   cursor: pointer;
@@ -330,19 +343,17 @@ body {
 }
 
 .figure {
-  /* display: table; */
+  display: table;
   width: 370px;
   height: 404px;
 }
 
 .figcaption {
-  /* display: table-caption;
-  caption-side: bottom; */
+  display: table-caption;
+  caption-side: bottom;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 
 .project-name {
