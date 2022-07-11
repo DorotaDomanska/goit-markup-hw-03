@@ -12,9 +12,16 @@ body {
   width: 1600px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .section {
@@ -24,36 +31,34 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  height: 80px;
 }
 
 .flex-box {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .left-header {
   display: flex;
   justify-content: flex-start;
-  gap: 93px;
 }
 
 .right-header {
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
 }
 
 .logo {
-  width: 145px;
-  height: 31px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .web {
@@ -72,14 +77,11 @@ body {
 .nav-list {
   list-style-type: none;
   display: flex;
-  width: 254px;
-  height: 16px;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 46px;
 }
 
 .nav-list-item {
-  width: 53px;
-  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -92,16 +94,11 @@ body {
 }
 
 .mail {
-  width: 135px;
-}
-
-.telephone {
-  width: 110px;
+  margin-right: 50px;
 }
 
 .mail,
 .telephone {
-  height: 16px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -117,14 +114,15 @@ body {
 
 .main-header {
   background-color: var(--brand-color-background-1);
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+.main-header-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h1 {
-  width: 696px;
-  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -132,11 +130,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-top: 200px;
+  margin-left: 252px;
+  margin-right: 252px;
 }
 
 .main-button {
-  width: 200px;
-  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--brand-color);
@@ -144,24 +143,24 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  padding: 10px 42px;
   color: #ffffff;
-  cursor: pointer;
+  margin-bottom: 200px;
 }
 
-.container.lorem-ipsum-list {
-  padding-bottom: 0;
+.main-button:hover {
+  cursor: pointer;
 }
 
 .lorem-ipsum-list {
   list-style-type: none;
-  width: 1170px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 94px;
 }
 
 .lorem-ipsum-list-item {
-  width: 270px;
-  height: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -171,16 +170,9 @@ body {
 }
 
 .lorem-ipsum-list p {
-  width: 270px;
-  height: 75px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.what-we-do {
-  width: 1170px;
-  height: 386px;
 }
 
 .images-list-header {
@@ -189,6 +181,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
   color: var(--brand-color-header);
 }
 
@@ -198,59 +191,33 @@ body {
 }
 
 .images-list.what-we-do {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .div-team {
   background-color: var(--brand-color-background-2);
 }
 
-.team {
-  width: 1170px;
-  height: 368px;
-}
-
-.team-list {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.team-list > li:not(:last child) {
-  margin-right: 30 px;
+.images-list.team-list {
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .figure-team {
-  width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.images-list-item {
-  display: block;
-}
-
-.figcaption-team {
-  display: table-caption;
-  caption-side: bottom;
   text-align: center;
 }
 
-.name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  letter-spacing: 0.03em;
-  color: var(--brand-color-header);
+.figcaption-team {
+  text-align: center;
+  padding: 20px 24px;
 }
 
-.position {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
-  letter-spacing: 0.03em;
+.name {
+  color: var(--brand-color-header);
 }
 
 .studio-footer {
@@ -258,15 +225,12 @@ body {
 }
 
 .footer {
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--brand-color-background-1);
 }
 
 .city-street {
-  width: 246px;
-  height: 21px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -277,8 +241,7 @@ body {
 }
 
 .mail-footer {
-  width: 231px;
-  height: 21px;
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -289,8 +252,6 @@ body {
 }
 
 .telephone-footer {
-  width: 231px;
-  height: 21px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -306,21 +267,15 @@ body {
   color: var(--brand-color);
 }
 
-.portfolio {
-  width: 1170px;
-}
-
 .buttons-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .buttons {
-  width: 93px;
-  height: 38px;
   background: var(--brand-color-background-2);
   border-radius: 4px;
   border: none;
@@ -328,40 +283,30 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
   color: var(--brand-color-header);
-  cursor: pointer;
 }
 
 .buttons:hover,
 .buttons:focus {
   background-color: var(--brand-color);
   color: #ffffff;
+  cursor: pointer;
 }
 
 .projects-list {
   flex-wrap: wrap;
 }
 
-.figure {
-  display: table;
-  width: 370px;
-  height: 404px;
-}
-
 .figcaption {
-  display: table-caption;
-  caption-side: bottom;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
 .project-name {
-  width: 322px;
-  height: 36px;
-  padding-top: 20px;
-  padding-bottom: 4px;
-  font-weight: 700;
+font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -369,9 +314,6 @@ body {
 }
 
 .project-type {
-  width: 322px;
-  height: 30px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
