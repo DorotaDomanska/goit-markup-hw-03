@@ -294,8 +294,19 @@ ul {
   cursor: pointer;
 }
 
+.figure,
+.figure-team {
+  margin: 0;
+}
+
 .projects-list {
   flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.images-list-item {
+  display: block;
 }
 
 .figcaption {
@@ -306,10 +317,11 @@ ul {
 }
 
 .project-name {
-font-weight: 700;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4 px;
   color: var(--brand-color-header);
 }
 
